@@ -24,9 +24,10 @@ public class Order {
 	
 	private String customerName;
 	private String date;
-
+	
+	/*
 	private Set<Product> products= new HashSet<Product>();
-
+	*/
 	public int getOrder_id() {
 		return order_id;
 	}
@@ -50,7 +51,8 @@ public class Order {
 	public void setDate(String date) {
 		this.date = date;
 	}
-
+	
+	/*
 	@ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 	@JoinTable(name = "order_products", 
 		joinColumns = { @JoinColumn(name = "order_id") }, 
@@ -58,15 +60,15 @@ public class Order {
 	public Set<Product> getProducts() {
 		return products;
 	}
-
+	
 	public void setProducts(Set<Product> products) {
 		this.products = products;
 	}
+	*/
 
 	@Override
 	public String toString() {
-		return "Order [order_id=" + order_id + ", customerName=" + customerName + ", date=" + date + ", products="
-				+ products + "]";
+		return "Order [order_id=" + order_id + ", customerName=" + customerName + ", date=" + date +"]";
 	}
 	
 }

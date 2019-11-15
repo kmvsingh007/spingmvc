@@ -31,8 +31,9 @@ public class Product {
 	@Column(name = "price")
 	private int price;
 	
+	/*
 	private Set<Order> orders = new HashSet<Order>(); 
-	
+	*/
 	public int getProduct_id() {
 		return product_id;
 	}
@@ -65,6 +66,7 @@ public class Product {
 		this.price = price;
 	}
 
+	/*
 	@ManyToMany(fetch = FetchType.LAZY, mappedBy = "products")
 	public Set<Order> getOrders() {
 		return orders;
@@ -73,7 +75,7 @@ public class Product {
 	public void setOrders(Set<Order> orders) {
 		this.orders = orders;
 	}
-
+	*/
 	
 	@Override
 	public String toString() {
